@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>New Orleans Occupancy vs Airbnb</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #d3d3d3;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+      color: #3d3d3d;
+    }
+
+    section {
+      width: 80%;
+      margin: 10px auto;
+    }
+
+    h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 300;
+      font-size: 2.5em;
+      /* The em unit. 2.5x the current size */
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700;
+      color: gray;
+      font-size: 1.25em;
+      letter-spacing: .04em;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 1.5em;
+    }
+
+    a {
+      color: #005daa;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 10px 0
+    }
+
+    #map {
+      width: 100%;
+      margin: 0px auto;
+
+    }
+
+    .max-image-width {
+      width: 100%;
+    }
+
+
+    .linkbox {
+      margin: 3px 0 20px 0;
+      display: block;
+      font-weight: 300;
+    }
+
+    hr {
+      border: 0px;
+      border-bottom: 1px solid #3d3d3d;
+      padding-top: 20px;
+    }
+
+    /* Use float property to make two-column layout. */
+
+    .first-column {
+      float: left;
+      width: 48%;
+      padding-right: 20px;
+    }
+
+    .column {
+      float: left;
+      width: 48%;
+    }
+
+    /* Clear floats after the columns */
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* When browser is 800px wide or less */
+
+    @media screen and (max-width: 800px) {
+      .first-column,
+      .column {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Add map to top of page and make it stretch to fill browser window. -->
+  <img class="max-image-width" src="800px-Streets_of_New_Orleans,_USA3.jpg" height: 200px"">
+
+  <!-- Create a two column layout for map information. -->
+  <section>
+     Photo by Diego Deslo <a href='delso.photo'>delso.photo</a> </a>, License <a href='https://creativecommons.org/licenses/by-sa/4.0/legalcodeLicense'> CC-BY-SA</a>  </a>    
+
+    <h1>New Orleans Occupancy vs Airbnb</h1>
+    <h2>Authored by: Robert Early</h2>
+
+    <div class="row">
+      
+      <!-- First column, the left half -->
+      <div class="first-column">
+        <p> New Orleans is in an era of demographic change. The city saw a large drop off in population, particularly after the devastation of Hurrican Katrina in 2005.  
+          The first map on this page shows changes in occupied housing units in New Orleans neighborhoods from 2000 to 2010 according to the US Census.  
+          Most of the area saw a decrease in occupancy over the decade.
+          According to <a href='https://nola.gov/homelessness/'>the City of New Orleans</a> </a>, it ranks in the top ten nationally for homelessness with a rate of 302.07 per 100,000 residents.
+
+          <br>
+          <br>
+          The second map shows Airbnb listings from 2020.
+          Although Airbnb launched in 2008, the company did not officially operate in New Orleans until 2016.  The city did impose stricter rules on hosts in 2019. 
+          Most of Airbnb's are centered around the main business and tourism sectors (primarily the French Quarter and Central Business District) around the city center.  
+  However the neighborhoods around that area make up the middle range of both maps, meaning a loss of occupancy from 2000 but also a significant number of Airbnb properties.
+  <br>
+  <br>
+          
+          While Airbnb does provide a source of supplemental income for some people who rely on it, 
+          it also consumes a lot of the available housing in New Orleans as people purchase investment properties.  
+          According to this 2020 data, 61 hosts have 10 or more listings.  
+          Those 61 make up less than two percent of hosts and average 23 listings each, accounting for over 1400 listings.
+          <br>  
+          <br>
+          The results of the 2020 census will be interesting to compare to this data.  
+
+        </p>
+      
+      </div>
+      
+      <!-- Second column, the right half -->
+      <div class="column">
+        <!-- Challenge map -->
+        <img class="max-image-width" src= "occchange_1200px.png">
+        <p class="linkbox"> <a href="occchange_8000px.png">Click for full size image </a>     
+
+        <!-- Challenge photograph -->
+        <br>
+
+        <img class="max-image-width" src= "airbnb_1200px.png" >
+        <p class="linkbox"> <a href="airbnb_8000px.png">Click for full size image </a>  
+      </div>
+    </div>
+
+    <h3><br>QGIS 3.6 and Windows 7
+			<br>Sources: Inside Airbnb and Greater New Orleans Community Data Center
+     
+      
+			
+
+    <p>
+      University of Kentucky New Maps Plus, Fall 2020
+    </p>
+    <hr>
+    <ul>
+      <li>See my projects on GitHub: <a href="https://github.com/BarelyRetro">BarelyRetro</a></li>
+    </ul>
+  </section>
+
+</body>
+</html>
